@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Picture</title>
+    <link rel="stylesheet" href="imageselected.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="boxlogo.png" type="image/png">
+</head>
+<body>
+
+<div id="navbar">
+    <a href="index.html" class="logo-container">
+        <img src="logo.png" alt="BADROBBIE!">
+        <span class="text-logo">BADROBBIE!</span>
+    </a>
+    <ul id="menu">
+        <li class="dropdown">
+            <a href="#">Albums</a>
+            <div class="dropdown-content">
+                <a href="commisions.html">Commissions</a>
+                <a href="robbielore.html">Robbie LORE</a>
+                <a href="character.html">Character REFS</a>
+                <a href="drawovers.html">Draw-Overs</a>
+                <a href="quetion.html">????</a>
+            </div>
+        </li>
+        <li><a href="#">WIPS</a></li>
+        <li><a href="#">VIP</a></li>
+        <li><a href="comm.html">Commission</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="search-bar">
+            <form action="searchresults.html" method="get">
+                <input id="searchInput" type="text" name="tags" placeholder="Search Tags">
+                <button type="submit">&#128269;</button>
+            </form>
+        </li>
+    </ul>
+</div>
+
+<div id="selected-image-container">
+    <div id="image-frame">
+        <img src="" alt="Selected Image" id="selected-image">
+        <div id="tags-container"></div>
+    </div>
+</div>
+
+<script>
+    var selectedImageSrc = sessionStorage.getItem('imageSrc');
+    var selectedImageName = sessionStorage.getItem('imageName');
+    var selectedImageTags = sessionStorage.getItem('imageTags');
+
+    document.getElementById('selected-image').src = selectedImageSrc;
+    document.title = selectedImageName + " - Selected Image";
+
+    var tagsContainer = document.getElementById('tags-container');
+    if (selectedImageTags) {
+        var tagsArray = selectedImageTags.split(',');
+        tagsArray.forEach(function(tag) {
+            var tagElement = document.createElement('span');
+            tagElement.textContent = '#' + tag.trim(); // prepend #
+            tagElement.classList.add('tag'); // add class for styling
+            tagsContainer.appendChild(tagElement);
+        });
+    }
+</script>
+
+<footer>
+    <div class="footer-logo">
+        <a href="index.html">
+            <img src="logo.png" alt="BADROBBIE!">
+        </a>
+    </div>
+    <div class="footer-links">
+        <a href="terms.html">Terms</a> /
+        <a href="https://twitter.com/BadRobbieStudio" target="_blank">
+            <i style="font-size:24px" class="fa">&#xf099;</i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BadRobbie!</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="boxlogo.png" type="image/png">
+    <script src="home.js" defer></script>
+
+</head>
+<body>
+
+<div id="navbar">
+    <a href="index.html" class="logo-container">
+        <img src="logo.png" alt="BADROBBIE!">
+        <span class="text-logo">BADROBBIE!</span>
+    </a>
+    <ul id="menu">
+        <li class="dropdown">
+            <a href="#">Albums</a>
+            <div class="dropdown-content">
+                <a href="commisions.html">Commissions</a>
+                <a href="robbielore.html">Robbie LORE</a>
+                <a href="character.html">Character REFS</a>
+                <a href="drawovers.html">Draw-Overs</a>
+                <a href="quetion.html">????</a>
+            </div>
+        </li>
+        <li><a href="#">WIPS</a></li>
+        <li><a href="#">VIP</a></li>
+        <li><a href="comm.html">Commission</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="search-bar">
+            <form action="searchresults.html" method="get">
+                <input id="searchInput" type="text" name="tags" placeholder="Search Tags">
+                <button type="submit">&#128269;</button>
+            </form>
+        </li>
+    </ul>
+</div>
+
+    <div id="main-pictures">
+       <!-- First row -->
+<div class="picture-frame" onclick="showImageDetail('2030Aaron02.png', 'Aaron')" data-tags="dog">
+    <img src="2030Aaron021.png" alt="Aaron">
+    <div class="image-info">
+        <p>Aaron</p>
+        <div class="icon-container">
+            <span id="clickCount_Aaron">0</span> <!-- Unique ID for Aaron's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Aaron')"></div> <!-- Passing 'Aaron' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('Ataraxia.png', 'Ataraxia')" data-tags="dog">
+    <img src="Ataraxia1.png" alt="Ataraxia">
+    <div class="image-info">
+        <p>Ataraxia</p>
+        <div class="icon-container">
+            <span id="clickCount_Ataraxia">0</span> <!-- Unique ID for Ataraxia's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Ataraxia')"></div> <!-- Passing 'Ataraxia' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('atomikmeltdownfulls.png', 'Atomik Meltdown')" data-tags="dog">
+    <img src="atomikmeltdown.png" alt="Atomik Meltdown">
+    <div class="image-info">
+        <p>Atomik Meltdown</p>
+        <div class="icon-container">
+            <span id="clickCount_AtomikMeltdown">0</span> <!-- Unique ID for Atomik Meltdown's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('AtomikMeltdown')"></div> <!-- Passing 'AtomikMeltdown' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+
+       <!-- Second row -->
+<div class="picture-frame" onclick="showImageDetail('Bluethebirb.png', 'Blue the Bird')" data-tags="bird">
+    <img src="Bluethebirb1.png" alt="Blue the Bird">
+    <div class="image-info">
+        <p>Blue the Bird</p>
+        <div class="icon-container">
+            <span id="clickCount_BlueBird">0</span> <!-- Unique ID for Blue the Bird's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('BlueBird')"></div> <!-- Passing 'BlueBird' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('Chromedoggo.png', 'Chrome Doggo')" data-tags="chrome">
+    <img src="Chromedoggo1.png" alt="Chrome Doggo">
+    <div class="image-info">
+        <p>Chrome Doggo</p>
+        <div class="icon-container">
+            <span id="clickCount_ChromeDoggo">0</span> <!-- Unique ID for Chrome Doggo's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('ChromeDoggo')"></div> <!-- Passing 'ChromeDoggo' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('DamienIsLewd.png', 'Damien Is Lewd')" data-tags="dog">
+    <img src="DamienIsLewd1.png" alt="Damien Is Lewd">
+    <div class="image-info">
+        <p>Damien Is Lewd</p>
+        <div class="icon-container">
+            <span id="clickCount_DamienLewd">0</span> <!-- Unique ID for Damien Is Lewd's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('DamienLewd')"></div> <!-- Passing 'DamienLewd' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+        <!-- Third row -->
+<div class="picture-frame" onclick="showImageDetail('FleckingAround.png', 'Flecking Around')" data-tags="dog">
+    <img src="FleckingAround1.png" alt="Flecking Around">
+    <div class="image-info">
+        <p>Flecking Around</p>
+        <div class="icon-container">
+            <span id="clickCount_FleckingAround">0</span> <!-- Unique ID for Flecking Around's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('FleckingAround')"></div> <!-- Passing 'FleckingAround' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('NaughtyAden.png', 'Naughty Aden')" data-tags="portrait male">
+    <img src="NaughtyAden1.png" alt="Naughty Aden">
+    <div class="image-info">
+        <p>Naughty Aden</p>
+        <div class="icon-container">
+            <span id="clickCount_NaughtyAden">0</span> <!-- Unique ID for Naughty Aden's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('NaughtyAden')"></div> <!-- Passing 'NaughtyAden' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('Yeenlewds.png', 'Yeen Lewds')" data-tags="portrait male">
+    <img src="Yeenlewdsfull.png" alt="Yeen Lewds">
+    <div class="image-info">
+        <p>Yeen Lewds</p>
+        <div class="icon-container">
+            <span id="clickCount_YeenLewds">0</span> <!-- Unique ID for Yeen Lewds' click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('YeenLewds')"></div> <!-- Passing 'YeenLewds' as the identifier -->
+        </div>     
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-logo">
+        <a href="index.html">
+            <img src="logo.png" alt="BADROBBIE!">
+        </a>
+    </div>
+    <div class="footer-links">
+        <a href="terms.html">Terms</a> /
+        <a href="https://twitter.com/BadRobbieStudio" target="_blank">
+            <i style="font-size:24px" class="fa">&#xf099;</i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

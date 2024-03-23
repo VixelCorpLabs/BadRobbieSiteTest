@@ -1,0 +1,212 @@
+body {
+  background-color: #001F3F;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  background-color: #001A33;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar img {
+  height: 40px;
+}
+
+
+#menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu li {
+  margin: 0 75px; /* Adjusted horizontal margin between menu items */
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 18px 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#menu li a:hover {
+  background-color: #003366;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #001A33;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #003366;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#main-pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Reduced gap between picture frames */
+  margin-top: 150px;
+}
+
+.picture-frame {
+  overflow: hidden;
+  width: calc(100% - 40px); /* Adjusted width to evenly distribute available space */
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px; /* Adjusted margin for equal space on all sides */
+}
+
+.picture-frame img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-info p {
+  margin: 0;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  cursor: pointer;
+  margin-right: 22px; /* Reduced margin to bring icons closer */
+}
+
+#main-pictures img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #001A33;
+  color: white;
+  padding: 40px 20px; /* Increased padding for a larger footer */
+  text-align: center;
+  width: 98.4%;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px; /* Add space between the logo and links */
+}
+
+.footer-logo img {
+  width: 80px; /* Adjust the width to make the logo in the footer larger */
+  height: auto; /* Automatically adjusts the height while maintaining the aspect ratio */
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 5px; /* Add spacing around the links and "/" */
+  font-size: 16px;
+}
+
+.twitter-logo {
+  font-size: 24px; /* Adjust the font size of the Twitter icon */
+}
+
+
+
+
+/* Add the following styles at the end of your CSS file */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-container img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.text-logo {
+  font-size: 24px;
+  font-weight: bold;
+}

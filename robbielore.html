@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobbieLORE</title>
+    <link rel="stylesheet" href="robbielore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="boxlogo.png" type="image/png">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="BADROBBIE!">
+            <span class="text-logo">BADROBBIE!</span>
+        </a>
+        <ul id="menu">
+            <li class="dropdown">
+                <a href="#">Albums</a>
+                <div class="dropdown-content">
+                    <a href="commisions.html">Commissions</a>
+                    <a href="robbielore.html">Robbie LORE</a>
+                    <a href="character.html">Character REFS</a>
+                    <a href="drawovers.html">Draw-Overs</a>
+                    <a href="quetion.html">????</a>
+                </div>
+            </li>
+            <li><a href="#">WIPS</a></li>
+            <li><a href="#">VIP</a></li>
+            <li><a href="comm.html">Commission</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="search-bar">
+                <form action="searchresults.html" method="get">
+                    <input id="searchInput" type="text" name="tags" placeholder="Search Tags">
+                    <button type="submit">&#128269;</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-pictures">
+       <!-- First row -->
+<div class="picture-frame" onclick="showImageDetail('Refs1.png', 'Refs')">
+    <img src="Refs1.png" alt="Refs">
+    <div class="image-info">
+        <p>Reference</p>
+        <div class="icon-container">
+            <span id="clickCount_Refs">0</span> <!-- Unique ID for Refs' click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Refs')"></div> <!-- Passing 'Refs' as the identifier -->
+        </div>   
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('Rob1.png', 'Rob')">
+    <img src="Rob1.png" alt="Rob">
+    <div class="image-info">
+        <p>Rob</p>
+        <div class="icon-container">
+            <span id="clickCount_Rob">0</span> <!-- Unique ID for Rob's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Rob')"></div> <!-- Passing 'Rob' as the identifier -->
+        </div>   
+    </div>
+</div>
+
+<div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+    <img src="placeholder.png" alt="placeholder">
+    <div class="image-info">
+        <p>Placeholder</p>
+        <div class="icon-container">
+            <span id="clickCount_Placeholder">0</span> <!-- Unique ID for Placeholder's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder')"></div> <!-- Passing 'Placeholder' as the identifier -->
+        </div>   
+    </div>
+</div>
+
+
+        <!-- Second row -->
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder1">0</span> <!-- Unique ID for the first Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder1')"></div> <!-- Passing 'Placeholder1' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder2">0</span> <!-- Unique ID for the second Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder2')"></div> <!-- Passing 'Placeholder2' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder3">0</span> <!-- Unique ID for the third Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder3')"></div> <!-- Passing 'Placeholder3' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+
+        <!-- Third row -->
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder1">0</span> <!-- Unique ID for the first Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder1')"></div> <!-- Passing 'Placeholder1' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder2">0</span> <!-- Unique ID for the second Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder2')"></div> <!-- Passing 'Placeholder2' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder3">0</span> <!-- Unique ID for the third Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder3')"></div> <!-- Passing 'Placeholder3' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+
+        <!-- Fourth row -->
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder1">0</span> <!-- Unique ID for the first Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder1')"></div> <!-- Passing 'Placeholder1' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder2">0</span> <!-- Unique ID for the second Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder2')"></div> <!-- Passing 'Placeholder2' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+        <div class="picture-frame" onclick="showImageDetail('placeholder.png', 'placeholder')">
+            <img src="placeholder.png" alt="placeholder">
+            <div class="image-info">
+                <p>Placeholder</p>
+                <div class="icon-container">
+                    <span id="clickCount_Placeholder3">0</span> <!-- Unique ID for the third Placeholder's click count -->
+                    <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Placeholder3')"></div> <!-- Passing 'Placeholder3' as the identifier -->
+                </div>   
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Your content goes here -->
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="logo.png" alt="BADROBBIE!">
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="terms.html">Terms</a> /
+            <a href="https://twitter.com/BadRobbieStudio" target="_blank">
+                <i style="font-size:24px" class="fa">&#xf099;</i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
