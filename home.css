@@ -210,3 +210,15 @@ footer {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* Add this media query at the end of your CSS file */
+@media screen and (max-width: 600px) {
+  #main-pictures {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    margin-top: 20px; /* Adjust margin for better spacing */
+  }
+
+  .picture-frame {
+    width: calc(100% - 40px); /* Adjusted width for better spacing */
+  }
+}
