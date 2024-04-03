@@ -13,7 +13,7 @@ body {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center items horizontally */
   align-items: center;
 }
 
@@ -21,18 +21,18 @@ body {
   height: 40px;
 }
 
-
 #menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: center; /* Center items horizontally */
   align-items: center;
+  flex-wrap: wrap; /* Allow menu items to wrap */
 }
 
 #menu li {
-  margin: 0 75px; /* Adjusted horizontal margin between menu items */
+  margin: 10px; /* Adjusted margin for better spacing */
 }
 
 #menu li a {
@@ -102,19 +102,19 @@ body {
 }
 
 #main-pictures {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Reduced gap between picture frames */
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center pictures horizontally */
+  margin-top: 100px; /* Adjusted margin for better spacing */
 }
 
 .picture-frame {
   overflow: hidden;
-  width: calc(100% - 40px); /* Adjusted width to evenly distribute available space */
+  width: calc(100% - 40px); /* Adjusted width for better spacing */
   height: auto;
   position: relative;
   border-radius: 10px;
-  margin: 20px; /* Adjusted margin for equal space on all sides */
+  margin: 10px 0; /* Adjusted margin for better spacing */
 }
 
 .picture-frame img {
@@ -161,21 +161,25 @@ body {
 footer {
   background-color: #001A33;
   color: white;
-  padding: 40px 20px; /* Increased padding for a larger footer */
+  padding: 20px; /* Adjusted padding for the footer */
   text-align: center;
-  width: 98.4%;
+  width: 100%; /* Full width */
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   align-items: center;
 }
 
 .footer-logo {
-  margin-bottom: 20px; /* Add space between the logo and links */
+  margin-bottom: 10px; /* Reduced margin for footer logo */
 }
 
 .footer-logo img {
   width: 80px; /* Adjust the width to make the logo in the footer larger */
   height: auto; /* Automatically adjusts the height while maintaining the aspect ratio */
+}
+
+.footer-links {
+  margin-top: 10px; /* Adjusted margin for footer links */
 }
 
 .footer-links a {
@@ -187,38 +191,4 @@ footer {
 
 .twitter-logo {
   font-size: 24px; /* Adjust the font size of the Twitter icon */
-}
-
-
-
-
-/* Add the following styles at the end of your CSS file */
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-}
-
-.logo-container img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.text-logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Add this media query at the end of your CSS file */
-@media screen and (max-width: 600px) {
-  #main-pictures {
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    margin-top: 20px; /* Adjust margin for better spacing */
-  }
-
-  .picture-frame {
-    width: calc(100% - 40px); /* Adjusted width for better spacing */
-  }
 }
