@@ -61,36 +61,3 @@ function toggleMenu() {
 }
 
 
-// test java
-
-
-// Function to increment click count and update display
-function incrementAndDisplayNumber(imageId) {
-    try {
-        var clickCountElement = document.getElementById("clickCount_" + imageId);
-        var currentCount = parseInt(localStorage.getItem("clickCount_" + imageId)) || 0;
-        var newCount = currentCount + 1;
-        clickCountElement.innerText = newCount;
-        localStorage.setItem("clickCount_" + imageId, newCount);
-    } catch (error) {
-        console.error("Error occurred:", error);
-    }
-}
-
-// Function to retrieve click count from localStorage on page load
-window.onload = function() {
-    try {
-        // Iterate through each image to retrieve and display its count
-        var images = document.querySelectorAll('img');
-        images.forEach(function(image) {
-            var imageId = image.getAttribute('id');
-            var clickCountElement = document.getElementById("clickCount_" + imageId);
-            var storedCount = localStorage.getItem("clickCount_" + imageId);
-            if (storedCount !== null) {
-                clickCountElement.innerText = storedCount;
-            }
-        });
-    } catch (error) {
-        console.error("Error occurred:", error);
-    }
-};
