@@ -6,7 +6,7 @@ function handleSearch(event) {
     var searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
 
     // Redirect to searchresults.html with the search query as a parameter
-    window.location.href = 'searchresults.html?tags=' + encodeURIComponent(searchQuery);
+    window.location.href = '/searchresults?tags=' + encodeURIComponent(searchQuery);
 }
 
 // Add event listener to the search form
@@ -20,7 +20,7 @@ function showImageDetail(imageSrc, imageName) {
 }
 
 // Function to filter images based on the search query in searchresults.html
-if (window.location.pathname.includes('searchresults.html')) {
+if (window.location.pathname.includes('/searchresults')) {
     window.onload = function() {
         // Retrieve the search query from the URL parameter
         var searchQuery = decodeURIComponent(getParameterByName('tags')).toLowerCase();
