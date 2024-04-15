@@ -19,6 +19,17 @@ function showImageDetail(imageSrc, imageName) {
     window.location.href = 'imageselected.html';
 }
 
+// Function to retrieve URL parameters
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
 // Function to filter images based on the search query in searchresults.html
 if (window.location.pathname.includes('/searchresults')) {
     window.onload = function() {
@@ -41,23 +52,5 @@ if (window.location.pathname.includes('/searchresults')) {
             }
         }
     };
-
-    // Function to retrieve URL parameters
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
 }
-
-
-function toggleMenu() {
-    var menu = document.querySelector('.menu-collapse');
-    menu.classList.toggle('active');
-}
-
 
