@@ -6,7 +6,7 @@ function handleSearch(event) {
     var searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
 
     // Redirect to searchresults.html with the search query as a parameter
-    window.location.href = '/searchresults?tags=' + encodeURIComponent(searchQuery);
+    window.location.href = 'searchresults.html?tags=' + encodeURIComponent(searchQuery);
 }
 
 // Add event listener to the search form
@@ -19,24 +19,11 @@ function showImageDetail(imageSrc, imageName) {
     window.location.href = 'imageselected.html';
 }
 
-// Function to retrieve URL parameters
-function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-
 // Function to filter images based on the search query in searchresults.html
-if (window.location.pathname.includes('/searchresults')) {
+if (window.location.pathname.includes('searchresults.html')) {
     window.onload = function() {
-        console.log("Page loaded successfully");
         // Retrieve the search query from the URL parameter
         var searchQuery = decodeURIComponent(getParameterByName('tags')).toLowerCase();
-        console.log("Search query:", searchQuery);
 
         // Retrieve all picture frames
         var pictureFrames = document.getElementsByClassName('picture-frame');
@@ -54,5 +41,17 @@ if (window.location.pathname.includes('/searchresults')) {
             }
         }
     };
+
+    // Function to retrieve URL parameters
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
 }
+
 
