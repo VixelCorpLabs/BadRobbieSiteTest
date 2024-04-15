@@ -33,8 +33,10 @@ function getParameterByName(name, url) {
 // Function to filter images based on the search query in searchresults.html
 if (window.location.pathname.includes('/searchresults')) {
     window.onload = function() {
+        console.log("Page loaded successfully");
         // Retrieve the search query from the URL parameter
         var searchQuery = decodeURIComponent(getParameterByName('tags')).toLowerCase();
+        console.log("Search query:", searchQuery);
 
         // Retrieve all picture frames
         var pictureFrames = document.getElementsByClassName('picture-frame');
