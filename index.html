@@ -12,17 +12,16 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="/">
-    <a href="/" class="logo-container">
-        <img src="logo.png" alt="BADROBBIE!">
-        <span class="text-logo">BADROBBIE!</span>
-    </a>
-    <div class="menu-toggle" id="toggle">
-        <div class="burger">&#9776;</div> <!-- Burger menu icon -->
-      </div>
-      <div class="menu-items mobile-menu">
-                
+    <nav class="navbar">
+        <a href="/">
+        <a href="/" class="logo-container">
+            <img src="logo.png" alt="BADROBBIE!">
+            <span class="text-logo">BADROBBIE!</span>
+        </a>
+    <ul id="menu">
+        <li class="dropdown">
+            <a href="#">Albums</a>
+            <div class="dropdown-content">
                 <a href="/commisions" class="text">Commissions</a>
                 <a href="/robbielore" class="text">Robbie LORE</a>
                 <a href="/character" class="text">Character REFS</a>
@@ -42,10 +41,7 @@
         </li>
     </ul>
 </div>
-</nav>
 
-      <div class="overlay"></div> <!-- Overlay for full-screen menu -->
-    
     <div id="main-pictures">
        <!-- First row -->
 <div class="picture-frame" onclick="showImageDetail('2030Aaron02.png', 'Aaron')" data-tags="dog">
@@ -164,29 +160,5 @@
         </a>
     </div>
 </footer>
-
-          <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const toggle = document.getElementById('toggle');
-      const menuItems = document.querySelector('.menu-items.mobile-menu');
-      const overlay = document.querySelector('.overlay');
-
-      toggle.addEventListener('click', function() {
-        menuItems.classList.toggle('active');
-        overlay.classList.toggle('active');
-      });
-
-      overlay.addEventListener('click', function() {
-        menuItems.classList.remove('active');
-        overlay.classList.remove('active');
-      });
-
-      // Add touch event listener for mobile devices
-      toggle.addEventListener('touchstart', function() {
-        menuItems.classList.toggle('active');
-        overlay.classList.toggle('active');
-      });
-    });
-  </script>
 </body>
 </html>
