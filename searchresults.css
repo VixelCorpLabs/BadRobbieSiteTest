@@ -147,13 +147,13 @@ body {
   }
   
   .icon {
-    width: 25px;
-    height: 25px;
-    background-size: cover;
     cursor: pointer;
-    margin-right: 22px; /* Reduced margin to bring icons closer */
+    margin-right: 10px;
   }
   
+  .icon-number {
+    margin-left: 5px;
+  }
   
   #main-pictures img:hover {
     transform: scale(1.2);
@@ -164,7 +164,7 @@ body {
     color: white;
     padding: 40px 20px; /* Increased padding for a larger footer */
     text-align: center;
-    width: 98.4%;
+    width: 97.6%;
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     align-items: center;
@@ -211,6 +211,7 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
 
 /* Add this media query at the end of your CSS file */
 @media screen and (max-width: 600px) {
