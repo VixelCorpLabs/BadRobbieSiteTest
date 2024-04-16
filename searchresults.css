@@ -147,12 +147,11 @@ body {
   }
   
   .icon {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
     cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .icon-number {
-    margin-left: 5px;
+    margin-right: 22px; /* Reduced margin to bring icons closer */
   }
   
   #main-pictures img:hover {
