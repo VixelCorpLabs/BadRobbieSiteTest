@@ -168,6 +168,7 @@ footer {
     flex-direction: column; /* Arrange items in a column */
     align-items: center;
   }
+
 .footer-logo {
   margin-bottom: 20px; /* Add space between the logo and links */
 }
