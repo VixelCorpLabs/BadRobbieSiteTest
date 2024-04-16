@@ -44,15 +44,15 @@
     <div id="main-pictures">
         <!-- First row -->
         <div class="picture-frame" onclick="showImageDetail('2030Aaron02.png', 'Aaron')" data-tags="dog">
-            <img src="2030Aaron021.png" alt="Aaron">
-            <div class="image-info">
-                <p>Aaron</p>
-                <span class="icon-container">
-                    <span class="icon">&#128077;</span>
-                    <span class="icon-number">0</span>
-                </span>
-            </div>
-        </div>
+  <img src="2030Aaron021.png" alt="Aaron">
+  <div class="image-info">
+      <p>Aaron</p>
+      <div class="icon-container">
+            <span id="clickCount_Aaron">0</span> <!-- Unique ID for Aaron's click count -->
+            <div class="icon" style="background-image: url('arrow.png');" onclick="incrementAndDisplayNumber('Aaron')"></div> <!-- Passing 'Aaron' as the identifier -->
+        </div>  
+  </div>
+</div>
 
         <div class="picture-frame" onclick="showImageDetail('Ataraxia.png', 'Ataraxia')" data-tags="dog">
             <img src="Ataraxia1.png" alt="Ataraxia">
