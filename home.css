@@ -209,28 +209,68 @@ body {
     font-weight: bold;
   }
 
-  /* Burger Menu Button */
-.burger-menu {
-  display: none; /* Hide on desktop */
-  cursor: pointer;
+/* Your existing CSS */
+
+/* Media query for small screens (mobile) */
+@media screen and (max-width: 600px) {
+    #burger-menu {
+        display: block; /* Show burger menu button */
+    }
+
+    #mobile-menu {
+        display: none; /* Hide mobile menu by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #001A33;
+        z-index: 999;
+        padding-top: 60px; /* Adjust based on the height of the navbar */
+    }
+
+    /* Adjust styles for burger menu button */
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Styles for showing mobile menu */
+    .mobile-menu.show {
+        display: block;
+    }
+
+    /* Styles for the mobile menu items */
+    #mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile-menu li {
+        padding: 18px 10px;
+        border-bottom: 1px solid #003366;
+    }
+
+    #mobile-menu li:last-child {
+        border-bottom: none;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
-/* Mobile Menu */
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #001A33;
-  z-index: 999;
-  padding-top: 60px; /* Adjust based on the height of the navbar */
-}
-
-.mobile-menu.show {
-  display: block;
-}
 
   
   /* Add this media query at the end of your CSS file */
