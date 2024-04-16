@@ -211,6 +211,8 @@ body {
 
 /* Your existing CSS */
 
+/* Your existing CSS */
+
 /* Media query for small screens (mobile) */
 @media screen and (max-width: 600px) {
     #burger-menu {
@@ -268,6 +270,11 @@ body {
     #mobile-menu a {
         color: white;
         text-decoration: none;
+    }
+
+    /* Hide desktop menu items */
+    #navbar #menu {
+        display: none;
     }
 }
 
