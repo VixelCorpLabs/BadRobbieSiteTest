@@ -1,3 +1,9 @@
+// Function to toggle the visibility of the mobile menu
+function toggleMenu() {
+    var menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("show");
+}
+
 // Function to handle the form submission for search
 function handleSearch(event) {
     event.preventDefault(); // Prevent the form from submitting normally
@@ -53,5 +59,3 @@ if (window.location.pathname.includes('searchresults.html')) {
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 }
-
-
