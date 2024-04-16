@@ -158,18 +158,18 @@ body {
     transform: scale(1.2);
   }
   
- footer {
+footer {
     background-color: #001A33;
     color: white;
     padding: 40px 20px; /* Increased padding for a larger footer */
     text-align: center;
-    width: 100%;
+    width: 100%; /* Set width to 100% to fit any screen size */
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     align-items: center;
 }
 
-/* Media queries for smaller screen sizes */
+/* Media query for smaller screen sizes */
 @media only screen and (max-width: 768px) {
     footer {
         padding: 20px; /* Reduce padding for smaller screens */
