@@ -164,9 +164,6 @@ footer {
     padding: 40px 20px; /* Increased padding for a larger footer */
     text-align: center;
     width: 100%; /* Set width to 100% to fit any screen size */
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center;
 }
 
 /* Media query for smaller screen sizes */
@@ -175,6 +172,7 @@ footer {
         padding: 20px; /* Reduce padding for smaller screens */
     }
 }
+
 
 
   
