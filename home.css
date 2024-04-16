@@ -159,15 +159,16 @@ body {
 }
 
 footer {
-    background-color: #001A33;
-    color: white;
-    padding: 40px 20px; /* Increased padding for a larger footer */
-    text-align: center;
-    width: 98.4%;
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center;
-  }
+  background-color: #001A33;
+  color: white;
+  padding: 40px 20px; /* Increased padding for a larger footer */
+  text-align: center;
+  width: 100%; /* Change fixed width to 100% */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center;
+}
+
 .footer-logo {
   margin-bottom: 20px; /* Add space between the logo and links */
 }
@@ -187,9 +188,6 @@ footer {
 .twitter-logo {
   font-size: 24px; /* Adjust the font size of the Twitter icon */
 }
-
-
-
 
 /* Add the following styles at the end of your CSS file */
 
